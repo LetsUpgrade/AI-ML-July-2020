@@ -1,0 +1,266 @@
+Why Python?
+Anaconda Navigator
+Python IDE -> Jupiter lab, Spyder, Orage3
+Packages:Numpy, Pandas, Matplotlib, Skypy,Skitlearn
+
+
+
+import numpy as np
+
+data1=[[1,2,3,4],[5,6,7,8]]
+
+arr1=np.array(data1)
+
+print(arr1)
+[[1 2 3 4]
+ [5 6 7 8]]
+
+arr1.ndim
+Out[66]: 2
+arr1.shape
+Out[67]: (2, 4)
+
+arr1.dtype
+Out[68]: dtype('int32')
+
+np.zeros((3,6))
+Out[69]: 
+array([[ 0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.],
+       [ 0.,  0.,  0.,  0.,  0.,  0.]])
+
+
+np.arange(15).reshape(3,5)
+Out[71]: 
+array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]])
+
+np.arange(15)
+Out[72]: array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14])
+
+
+a=np.arange(15)
+
+a
+Out[74]: array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14])
+
+
+a[5]
+Out[75]: 5
+
+
+a[5:8]
+Out[76]: array([5, 6, 7])
+
+a[5:8]=12
+
+a
+Out[78]: array([ 0,  1,  2,  3,  4, 12, 12, 12,  8,  9, 10, 11, 12, 13, 14])
+
+visu=np.arange(15).reshape(3,5)
+
+visu
+Out[80]: 
+array([[ 0,  1,  2,  3,  4],
+       [ 5,  6,  7,  8,  9],
+       [10, 11, 12, 13, 14]])
+
+visu[0]
+Out[81]: array([0, 1, 2, 3, 4])
+visu[:,0]
+Out[82]: array([ 0,  5, 10])
+
+
+array2d=np.array([[1,2,3],[4,5,6],[7,8,9]])
+
+array2d
+Out[84]: 
+array([[1, 2, 3],
+       [4, 5, 6],
+       [7, 8, 9]])
+
+array2d[3]
+Traceback (most recent call last):
+
+  File "<ipython-input-85-ee5ba22a1b7e>", line 1, in <module>
+    array2d[3]
+
+IndexError: index 3 is out of bounds for axis 0 with size 3
+
+
+
+
+array2d[2]
+Out[86]: array([7, 8, 9])
+
+array2d[0,2]
+Out[87]: 3
+
+
+array2d[:2]
+Out[88]: 
+array([[1, 2, 3],
+       [4, 5, 6]])
+array2d[2:]
+Out[89]: array([[7, 8, 9]])
+
+array2d[:,0:2]
+Out[90]: 
+array([[1, 2],
+       [4, 5],
+       [7, 8]])
+array2d[:,0]
+Out[91]: array([1, 4, 7])
+
+array2d[0:2,0:2]
+Out[92]: 
+array([[1, 2],
+       [4, 5]])
+
+
+array2d
+Out[93]: 
+array([[1, 2, 3],
+       [4, 5, 6],
+       [7, 8, 9]])
+
+array2d.T
+Out[94]: 
+array([[1, 4, 7],
+       [2, 5, 8],
+       [3, 6, 9]])
+
+arr=np.arange(10)
+
+arr
+Out[96]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+arr1=np.sqrt(arr)
+
+arr1
+Out[98]: 
+array([ 0.        ,  1.        ,  1.41421356,  1.73205081,  2.        ,
+        2.23606798,  2.44948974,  2.64575131,  2.82842712,  3.        ])
+
+np.square(arr1)
+Out[99]: array([ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.,  8.,  9.])
+
+
+np.sign(arr1)
+Out[100]: array([ 0.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1.,  1.])
+
+
+np.exp(arr1)
+Out[101]: 
+array([  1.        ,   2.71828183,   4.11325038,   5.65223367,
+         7.3890561 ,   9.35646902,  11.58243519,  14.09403011,
+        16.91882868,  20.08553692])
+
+
+np.log(arr1)
+__main__:1: RuntimeWarning: divide by zero encountered in log
+Out[102]: 
+array([       -inf,  0.        ,  0.34657359,  0.54930614,  0.69314718,
+        0.80471896,  0.89587973,  0.97295507,  1.03972077,  1.09861229])
+
+
+np.floor(arr1)
+Out[103]: array([ 0.,  1.,  1.,  1.,  2.,  2.,  2.,  2.,  2.,  3.])
+
+np.ceil(arr1)
+Out[104]: array([ 0.,  1.,  2.,  2.,  2.,  3.,  3.,  3.,  3.,  3.])
+
+a=[4,3,1]
+
+b=[3,4,1]
+
+np.add(a,b)
+Out[107]: array([7, 7, 2])
+
+
+np.subtract(a,b)
+Out[108]: array([ 1, -1,  0])
+
+
+np.multiply(a,b)
+Out[109]: array([12, 12,  1])
+
+np.divide(a,b)
+Out[110]: array([ 1.33333333,  0.75      ,  1.        ])
+
+
+np.fmax(a,b)
+Out[111]: array([4, 4, 1])
+
+
+np.fmin(a,b)
+Out[112]: array([3, 3, 1])
+
+np.mod(a,b)
+Out[113]: array([1, 3, 0], dtype=int32)
+
+np.greater(a,b)
+Out[114]: array([ True, False, False], dtype=bool)
+
+np.greater_equal(a,b)
+Out[115]: array([ True, False,  True], dtype=bool)
+
+np.less_equal(a,b)
+Out[116]: array([False,  True,  True], dtype=bool)
+
+
+np.less(a,b)
+Out[117]: array([False,  True, False], dtype=bool)
+
+np.equal(a,b)
+Out[118]: array([False, False,  True], dtype=bool)
+
+
+arrsts=np.array([[0,1,2],[3,4,5],[6,7,8]])
+
+arrsts
+Out[120]: 
+array([[0, 1, 2],
+       [3, 4, 5],
+       [6, 7, 8]])
+
+arrsts.mean()
+Out[121]: 4.0
+
+arrsts.std()
+Out[122]: 2.5819888974716112
+
+
+arrsts.var()
+Out[123]: 6.666666666666667
+
+arrsts.sum()
+Out[124]: 36
+
+a=np.array([[1,2,3],[2,3,4]])
+
+a
+Out[126]: 
+array([[1, 2, 3],
+       [2, 3, 4]])
+
+z=np.zeros([2,3])
+
+z
+Out[128]: 
+array([[ 0.,  0.,  0.],
+       [ 0.,  0.,  0.]])
+
+np.append(a,z,axis=0)
+Out[129]: 
+array([[ 1.,  2.,  3.],
+       [ 2.,  3.,  4.],
+       [ 0.,  0.,  0.],
+       [ 0.,  0.,  0.]])
+
+np.append(a,z,axis=1)
+Out[130]: 
+array([[ 1.,  2.,  3.,  0.,  0.,  0.],
+       [ 2.,  3.,  4.,  0.,  0.,  0.]])
+
