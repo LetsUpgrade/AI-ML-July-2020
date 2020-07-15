@@ -1,0 +1,22 @@
+Central Tendency:
+------------------
+-> Mean - Average
+-> Median - Middle
+-> mode - most frequently occuring value
+
+Dispersion:
+-----------
+Variance -> Variation is there in the dataset
+Std Deviation -> Consistency of the data
+Percentile -> Relative performance
+Quantile -> Quaterly basis
+
+Distribution of Shape:
+--------------------
+Skewness -> Symentric
+Krutosis -> Peakness
+
+Outlier:
+--------
+Box Plot
+Scatter Diagram
