@@ -1,0 +1,19 @@
+Step 1: Formulation of Hypothesis
+H0 -> There is no significant correlation between Attitude and Duration(r=0)
+Ha -> There is significant correlation between Attitude and Duration(r !=0)
+
+Step 2: Select the appropriate test
+T -test
+
+Step 3: Level of Significance and Degree of Freedom(n-2)
+Alpha = 0.05 -> 5% error and remaining 95% accuracy
+
+Step 4: Calculating the test value -> CV = 8.144
+
+Step 5: Calculate the Table value -> TV = 2.228
+
+Step 6: Compare the CV and TV
+
+Step 7: Hypothesis Conclusion
+TV > CV -> Accept H0 
+CV > TV -> Reject H0

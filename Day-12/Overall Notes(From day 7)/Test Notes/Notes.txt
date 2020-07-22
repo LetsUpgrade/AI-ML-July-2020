@@ -1,0 +1,121 @@
+Apartment -> 60 Houses -> House No: 01 to 60 -> Family Head(Father)
+
+Wilcoxson Sign Test -> To compare the 2 paired samples
+------------------------------------------------------
+1st-15 Days -> 30 FH -> Morning shift -> H.No - 1 to 30
+            -> 30 FH -> Evening shift -> H.No - 31 to 60
+
+16-30 Days  -> 30 FH -> Evening shift -> H.NO - 1 to 30
+            -> 30 FH -> Morning shift -> H.No - 31 to 60
+
+P<0.05 -> Reject H0
+p>0.05 -> Accept H0
+
+H0 -> There is no significant difference in calcium level of the patient intial and after 2 weeks
+HA -> There is significant difference in calcium level of the patient intial and after 2 weeks
+
+
+
+
+Freidman Test -> To compare more than 2 paired samples
+------------------------------------------------------
+1st - 10 Days -> 20 FH -> Morning shift -> h.no - 1 to 20
+              -> 20 FH -> Afternoon shift -> h.no - 21 to 40
+              -> 20 FH -> Evening shift -> h.no - 41 to 60
+
+11-20 Days -> 20 FH -> Afternoon shift -> h.no - 1 to 20
+           -> 20 FH -> Evening shift -> h.no - 21 to 40
+           -> 20 FH -> Morning shift -> h.no - 41 to 60
+
+21-30 Days -> 20 FH -> Evening shift -> h.no - 1 to 20
+           -> 20 FH -> Morning shift -> h.no - 21 to 40
+           -> 20 FH -> Afternoon shift -> h.no - 41 to 60
+
+H0 -> There is no significant difference in calcium level of the patient intial and after 2 weeks and also 4th Week
+Ha -> There is significant difference in calcium level of the patient intial and after 2 weeks and also 4th Week
+
+
+
+
+
+Mann whitney Test -> To compare 2 independent samples
+------------------------------------------------------
+1-30 Days -> 30 FH -> Morning shift only - 1 to 30
+          -> 30 FH -> Evening shift only - 31 to 60
+
+H0 -> There is no significant difference in the sales of Design 1 and design 2
+HA -> There is significant difference in the sales of Design 1 and design 2
+
+
+
+Krushkal Wallis Test -> To compare more than 2 independent samples
+------------------------------------------------------------------
+1-30 Days -> 20 FH -> Morning Shift only - 1 to 20
+          -> 20 FH -> Afternoon shift only - 21 to 40
+          -> 20 FH -> Evening shift only - 41 to 60
+
+H0 -> There is no significant difference in the sales of Design 1, design 2 and Design 3
+HA -> There is significant difference in the sales of Design 1 and design 2 and Design 3
+
+
+
+Chi square test -> To check the dependency of the variables. Variables should be categorical
+--------------------------------------------------------------------------------------------
+Variables -> Gender - > Male(1) and Female(0)
+          -> Smoking -> Past Smoker(2), Current Smoker(1) and Non Smoker(0)
+
+H0 -> There is no dependency b/w Gender and Smoking
+Ha -> There is dependency b/w Gender and Smoking
+
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+One Sample Test -> To compare the sample mean with population mean
+
+Sample Mean ->
+Population Mean -> 65
+
+H0: There is no significant difference of the mean of students height against population mean = 65
+H1: There is significant difference of the mean of students height against population mean = 65
+
+2 sample paired t test -> To compare the mean of 2 paired samples
+-----------------------
+
+Ho -> There is no significant difference in the mean of english and maths marks
+H1 -> There is significant difference in the mean of english and maths marks
+
+
+2 Sample independent T-Test -> To compare the mean of 2 independent samples
+------------------------------------------------
+H0 -> There is no significant difference in the mean of duration b/w Athelete and Non Athelete
+H1 -> There is significant difference in the mean of duration b/w Athelete and Non Athelete
+
+
+
+t= (172.5 - 168)/3  = 4.5/3 = 1.5
+
+> dataset<-read.xlsx("1 Wilcoxon.xlsx",sheetIndex=1)
+> attach(dataset)
+> head(dataset)
+
+wilcox.test(TOTALCIN,TOTALCW2,exact=FALSE,paired=TRUE)-wilcoxson
+
+wilcox.test(Sales~Design,dataset1) - manwhitney
+
+kruskal.test(Sales~Design,dataset2) - kruskal
+
+> chitable<-table(Gender,Smoking)
+> chitable
+
+> print(chisq.test(chitable))
+
+> t.test(Height,mu=65,alternative="greater")
+
+> t.test(English,Math,paired=TRUE)

@@ -1,0 +1,17 @@
+ANOVA - Analysis of Variance
+
+1 Way ANOVA - 1 DV and 1 IDV
+2 Way ANOVA - 1 DV and 2 IDV
+
+DV - Continuous and IDV - Categorical
+
+To campare the Sample Mean
+---------------------------------
+
+ANCOVA - Analysis of Covariance
+
+DV - Continuous and IDV - Continuous and Categorical
+
+To compare the Covariance of Sample Mean
+
+----------------------------------------------
