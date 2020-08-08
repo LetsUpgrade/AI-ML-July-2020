@@ -1,0 +1,9 @@
+Project 1: Build Decision Tree(DV-"Survived",IDV-"Age,Gender and Fare") and Prediction
+
+Project 2: Build Decision Tree for Attrition Rate Analysis
+DV - "Attrition"
+IDV - Output of RF Algorithm
+
+Project 3: Build Decision Tree for Bank Loan Modelling
+DV - "Personal Loan"
+IDV - Output of RF Algorithm

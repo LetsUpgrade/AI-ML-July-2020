@@ -1,0 +1,21 @@
+Decision Tree and Random Forest
+----------------------------------
+Step 1: Loaded the training Dataset - processed the dataset
+
+Step 2: Initialise the Decision Tree
+
+step 3: Model 1 - [DV - Survived and IDV - Sex]
+
+Step 4: Model 2 - [DV - Survived and IDV - Sex and Pclass]
+
+Step 5: Model 3 - [DV - Survived and IDV - Sex, Age, Pclass and Fare] -8
+
+Step 6: Accuracy Score
+
+Step 7: Loaded the Test Dataset and processed the dataset
+
+Step 8: Based on the training Dataset predicted the test dataset output
+
+Step 9: Prunning - Random Forest Classifier
+
+Step 10: Identification of important IDV for Decision Tree
